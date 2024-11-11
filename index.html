@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ghina & Chandra Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Simply Countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon Link -->
+    <link rel="icon" href="img/G and C logo.png">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <!-- HERO SECTION -->
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center"
+    >
+      <main>
+        <h4>Kepada Yth. Bapak/Ibu/Saudara/i,</h4>
+        <h1>Ghina & Chandra</h1>
+        <p>Akan melangsungkan pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-5" onclick="enableScroll()">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/Logo.png" alt="Logo"></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/Logo.png" alt="Logo"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto"></div>
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>  
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>                        
+              <a class="nav-link" href="#gifts">Gifts</a> 
+            </div>           
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center" >
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan di Bandung, Jawa Barat.</h3>
+            <p>Kami bermaksud mengundang Bapak/Ibu/Saudara/i berkenan menghadiri acara pernikahan kami.</p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <!-- Image dan Keterangan Chandra -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Chandra Perdana Putra</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eius quae fugit dolorem blanditiis excepturi!</p>
+                <p>Putra dari Bpk. Asep <br> dan <br> Ibu Anne</p>
+              </div>
+              <div class="col-4">
+                <img src="img/Chandra.png" alt="Chandra Putra" class="img-responsive rounded-circle">
+              </div>
+            </div>
+          </div>
+
+          <!-- Heart Icon -->
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+          
+          <!-- Image dan Keterangan Ghina -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/Ghina.png" alt="Ghina Khaerunnisa" class="img-responsive rounded-circle">
+              </div>
+              <div class="col-8">
+                <h3>Ghina Khaerunnisa</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eius quae fugit dolorem blanditiis excepturi!</p>
+                <p>Putri dari Bpk. An An <br> dan <br> Ibu Irna</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="info" id="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center mt-5">
+            <h2>Informasi Acara</h2>
+            <div class="alamat">Alamat: Hotel Malaka <br> Jl. Halimun No.36, Malabar, Kec. Lengkong, Kota Bandung, Jawa Barat</div>
+            <a href="https://maps.app.goo.gl/ZwQW8dHwmzY6UAqX7" target="_blank" class="btn btn-light btn-sm my-2">Lokasi Google Maps</a>
+            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi anda salah jadwal atau salah tempat.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock-fill d-block"></i>
+                    <span>08-00 - 10.00 WIB</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar2-check-fill d-block"></i>
+                    <span>Minggu, 1 Januari 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock-fill d-block"></i>
+                    <span>11-00 - 14.00 WIB</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar2-check-fill d-block"></i>
+                    <span>Minggu, 1 Januari 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara resepsi diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section id="story" class="story">
+      <div class="container"> <!--Judul isi story-->
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Kisah Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>"Berawal dari sebuah pertemuan sederhana, kami merasakan getaran yang berbeda--
+               kami saling mengenal, memahami, mendukung dan tumbuh bersama. Kisah ini bukan hanya tentang
+               kebahagiaan, tapi juga tentang perjuangan, tawa dan air mata yang membuat ikatan kami semakin kuat.
+               Dari pertemuan pertama hingga saat ini, kami mengundang anda untuk mengikuti perjalanan kami,
+               sebuah cerita cinta yang penuh keajaiban, harapan, dan mimpi yang kami bangun bersama."</p>
+          </div>
+        </div>
+
+        <div class="row"> <!--Baris baru untuk kisah-->
+          <div class="col">
+            <ul class="timeline"> <!--Menampung sebanyak mungkin list-->
+              <li> <!--Panel Posisi Kiri-->
+                <div class="timeline-image" style="background-image: url(img/GC\ a.JPG);"> <!--Menyimpan gambar per kisah-->
+                </div>
+                <div class="timeline-panel"> <!--Penjelasan per kisah-->
+                  <div class="timeline-heading"> <!--Judul per kisah-->
+                    <h3>Pertama Bertemu</h3>
+                    <span>Juli 2015</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Kisah awal pertemuan dan memulai perkenalan</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted"> <!--Gambar Posisi Kanan Pertama-->
+                <div class="timeline-image" style="background-image: url(img/GC\ b.JPG);"> <!--Menyimpan gambar per kisah-->
+                </div>
+                <div class="timeline-panel"> <!--Penjelasan per kisah-->
+                  <div class="timeline-heading"> <!--Judul per kisah-->
+                    <h3>Mulai Hubungan Serius</h3>
+                    <span>November 2015</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Mengungkapkan perasaan terhadap satu sama lain.</p>
+                  </div>
+                </div>
+              </li>
+              
+              <li> <!--Panel Posisi Kiri-->
+                <div class="timeline-image" style="background-image: url(img/GC\ c.JPG);"> <!--Menyimpan gambar per kisah-->
+                </div>
+                <div class="timeline-panel"> <!--Penjelasan per kisah-->
+                  <div class="timeline-heading"> <!--Judul per kisah-->
+                    <h3>Perjalanan Hubungan Pacaran</h3>
+                    <span>Mulai November 2015</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Perjalanan saling mengenal, memahami, mendukung dan tumbuh bersama. Kebahagiaan dan Perjuangan.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted"> <!--Gambar Posisi Kanan Pertama-->
+                <div class="timeline-image" style="background-image: url(img/GC\ d.JPG);"> <!--Menyimpan gambar per kisah-->
+                </div>
+                <div class="timeline-panel"> <!--Penjelasan per kisah-->
+                  <div class="timeline-heading"> <!--Judul per kisah-->
+                    <h3>Pembahasan Tunangan ke Jenjang Pernikahan</h3>
+                    <span>November 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Pembicaraan Ikhtiar dalam menghalalkan hubungan ke Pernikahan.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li> <!--Panel Posisi Kiri-->
+                <div class="timeline-image" style="background-image: url(img/GC\ e.JPG);"> <!--Menyimpan gambar per kisah-->
+                </div>
+                <div class="timeline-panel"> <!--Penjelasan per kisah-->
+                  <div class="timeline-heading"> <!--Judul per kisah-->
+                    <h3>Rencana Pernikahan</h3>
+                    <span>Mei 2025</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Rencana Pernikahan Kami. Insya Allah.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--GALLERY SECTION-->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Gallery Kisah Kami</span>
+            <h2>Gallery Foto</h2>
+            <p>"Moment Visualisasi Foto"</p>
+          </div>
+        </div>
+                
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"> 
+          <div class="col mt-3">
+            <a href="img/gallery/GC gallery a.JPG" data-toggle="lightbox" data-caption="Ghina & Chandra a" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/GC gallery a.JPG" alt="Ghina & Chandra a" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/GC gallery a.JPG" data-toggle="lightbox" data-caption="Ghina & Chandra b" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/GC gallery a.JPG" alt="Ghina & Chandra b" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/GC gallery a.JPG" data-toggle="lightbox" data-caption="Ghina & Chandra c" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/GC gallery a.JPG" alt="Ghina & Chandra c" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/GC gallery a.JPG" data-toggle="lightbox" data-caption="Ghina & Chandra d" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/GC gallery a.JPG" alt="Ghina & Chandra d" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/GC gallery a.JPG" data-toggle="lightbox" data-caption="Ghina & Chandra e" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/GC gallery a.JPG" alt="Ghina & Chandra e" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/GC gallery a.JPG" data-toggle="lightbox" data-caption="Ghina & Chandra f" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/GC gallery a.JPG" alt="Ghina & Chandra f" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/GC gallery a.JPG" data-toggle="lightbox" data-caption="Ghina & Chandra g" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/GC gallery a.JPG" alt="Ghina & Chandra g" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/GC gallery a.JPG" data-toggle="lightbox" data-caption="Ghina & Chandra h" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/GC gallery a.JPG" alt="Ghina & Chandra h" class="img-fluid w-100 rounded">
+            </a>
+          </div>          
+        </div>        
+      </div>
+    </section>
+
+    <!--RSVP SECTION-->
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Mohon dipersilahkan untuk mengisi data konfirmasi kehadiran</p>
+          </div>
+        </div>
+
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbzAUKSjiUbUxBmhRoBhvTfjs13ITtWITRQ9mZMGy2NF3gJN5udYKfs4bRIi-sJLzrhf/exec" id="my-form">
+          <!--Input Label Nama-->
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama">
+            </div>
+          </div>
+
+          <!--Input Label Kehadiran-->
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label"`>Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            </div>
+          </div>
+          
+          <!--Input Label Status-->
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label"`>Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Input Label Status-->
+          <div class="col-12 button" style="margin-top: 30px;">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+      </div>   
+    </section>
+
+    <!--GIFTS SECTION-->
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan Tanda Kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Dipersilahkan untuk membagi kebahagiaan</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold nama-bank">BCA</div>
+                <img src="img/Hotel Malaka.png" alt="BCA QR" class="img-thumbnail" width="150">
+                <p>123456789 - Chandra P. Putra</p>
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold nama-bank">BJB</div>
+                <img src="img/Hotel Malaka.png" alt="BCA QR" class="img-thumbnail" width="150">
+                <p>123456789 - Chandra P. Putra</p>
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold nama-bank">MANDIRI</div>
+                <img src="img/Hotel Malaka.png" alt="BCA QR" class="img-thumbnail" width="150">
+                <p>123456789 - Ghina K.</p>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2024 Ghina & Chandra | All Rights Reserved.</small>
+            <small class="block">Design by ChandraGrafika</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT SECTION -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js">      
+    </script>
+
+    <!-- Simply Countdown -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 1, // required
+        day: 1, // required
+        hours: 0, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Hari", plural: "Hari" },
+          hours: { singular: "Jam", plural: "Jam" },
+          minutes: { singular: "Menit", plural: "Menit" },
+          seconds: { singular: "Detik", plural: "Detik" },
+        },
+      });
+    </script>
+
+    <!-- Overlow Sticky Top -->
+    <script>      
+      const stickyTop = document.querySelector('.sticky-top');
+      const offCanvas = document.querySelector('.offcanvas');
+
+      offCanvas.addEventListener('show.bs.offcanvas', function(){
+        stickyTop.style.overflow = 'visible';
+      });
+
+      offCanvas.addEventListener('hidden.bs.offcanvas', function(){
+        stickyTop.style.overflow = 'hidden';
+      });
+
+    </script>
+
+    <!--Disable Scroll-->
+    <script>
+      const rootElement = document.querySelector(":root");
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function() {
+          window.scrollTo(scrollTop, scrollLeft);
+        }           
+        
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll(){
+        window.onscroll = function() {}
+        rootElement.style.scrollBehavior = 'smooth';
+        localStorage.setItem('opened', 'true'); /*membuat variable untuk disimpan ke local storage*/
+      }
+
+      if(!localStorage.getItem('opened')){
+        disableScroll();
+      }      
+    </script>
+
+    <script>
+    window.addEventListener("load", function () {
+      const form = document.getElementById('my-form');
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+          .then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+          })
+      });
+    });
+    </script>
+  </body>
+</html> 
